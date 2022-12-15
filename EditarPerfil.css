@@ -1,0 +1,342 @@
+*{
+	margin: 0; /* Mano não sei não sei para de perguntar */
+	padding: 0;
+}
+img.Logo{
+	height: 90px; /* Isso deixa a imagem de um tamanho bonito */
+	width: 140px; /* Isso deixa a imagem de um tamanho bonito */
+}
+.upload{
+    width: 140px;
+    margin-left: 210px;
+    text-align: center;
+  }
+  .upload img{
+    border-radius: 50%;
+    border: 8px solid #DCDCDC;
+    width: 164px;
+    height: 164px;
+  }
+  .upload .rightRound{
+    position: absolute;
+    left: 800px;
+    top: 490px;
+    background-image: url('Imagens/camera.png');
+    width: 64px;
+    height: 64px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .upload .rightRound-2{
+    position: absolute;
+    left: 780px;
+    top: 490px;
+    background-image: url('Imagens/verificar.png');
+    width: 64px;
+    height: 64px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .upload .leftRound{
+    position: absolute;
+    top: 490px;
+    background-image: url('Imagens/perto.png');
+    width: 64px;
+    height: 64px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .upload .fa{
+    color: white;
+  }
+  .upload input{
+    position: absolute;
+    transform: scale(2);
+    opacity: 0;
+  }
+  .upload input::-webkit-file-upload-button, .upload input[type=submit]{
+    cursor: pointer;
+  }
+img.Engrenagem { /* isso aqui muda a engrenagem (tela configuração) la no canto superior direito*/
+    margin-top: 10px;
+    float: right;
+    height: 40px;
+    width: 40px;
+    margin-right: 30px;
+}
+body{
+	background: black; /* deixa a fundo cinza */
+    font-family: 'Poppins';
+}
+header {
+    background-color: #1B182B;
+}
+a{
+	text-decoration: none; /* tira o sublinhado */
+	color: #fff;
+	transition: 0.3s;
+}
+a:hover{
+	color: black; /* Trasforma o link em preto, não sei pq continua siblinhado, porém a gente descobre mais tarde */
+	opacity: 0.7;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+	font-size: 30px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.nav-item {
+    margin: 0 15px;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+.Titulo { /* isso aqui é sobre a partezinha branca*/
+    text-align: left;
+	background: #FFFFFF;
+    height: 60px;
+    right: 100%;
+	margin-top: 0px;
+}
+#ALGORITMO { /* ja isso aqui é só para o textinho */
+    margin-left: 70px;
+    font-size: 50px;
+    color: #000000;
+}
+.BlocoFoto { 
+    display: flex ;
+    background-color: #13111B;
+    margin-top: 0px;
+    justify-content: space-between;
+    height: 120px;
+}
+.Excluir {
+    height: 55px;
+    width: 280px;
+    background-color: #EA1E63;
+    border-radius: 50px;
+    margin-top: 2%;
+    font: 30px;
+    color: #FFF;
+    box-shadow: white 5px 5px 0px;
+    transition: transform 200ms, box-shadow
+	200ms;
+    cursor: pointer;
+    margin-left: 1100px;
+}
+.Excluir:active {
+    transform: translateY(4px) translateX(4px);
+	box-shadow:none;
+}
+.Btn_Perfil {
+    margin-right: 7%;
+    word-spacing: 30px;
+}
+.Tela {
+    width: auto;
+    height: auto;
+    text-align: left;
+    padding: 50px 0 30px 30%;
+}
+.Label {
+    color: #FFFFFF;
+    font-size: 35px;
+    line-height: 60px;
+    font: 30px;
+}
+#Campo_Formulario {
+    resize: none;
+    text-align: center;
+    font-size: 30px;
+    height: 40px;
+    width: 600px;
+    border-radius: 20px;
+    color: #FFFFFF;
+    background-color: #1B182B;
+    box-shadow: white 5px 5px 0px;
+    transition: transform 200ms, box-shadow
+	200ms;
+}
+.Salvar_Cancelar{
+    padding: 0 0 50px 0;
+}
+.Salvar{
+    margin-left: 30%;
+    height: 55px;
+    width: 280px;
+    background-color: #61C68A;
+    border-radius: 50px;
+    font: 30px;
+    color: #FFF;
+    margin-top: 2%;
+    margin-right:30px ;
+    box-shadow: white 5px 5px 0px;
+    transition: transform 200ms, box-shadow
+	200ms;
+    cursor: pointer;
+}
+.Salvar:active{
+	transform: translateY(4px) translateX(4px);
+	box-shadow:none;
+}
+.Cancelar{
+    height: 55px;
+    width: 280px;
+    background-color: #EA1E63;
+    border-radius: 50px;
+    font: 30px;
+    color: #FFF;
+    margin-top: 2%;
+    margin-right:30px ;
+    box-shadow: white 5px 5px 0px;
+    transition: transform 200ms, box-shadow
+	200ms;
+    cursor: pointer;
+}
+.Cancelar:active{
+	transform: translateY(4px) translateX(4px);
+	box-shadow:none;
+}
+.Rodape {
+    display: flex;
+    background-color: #1B182B;
+    position:relative;
+    bottom: 0px;
+    color: #FFF;
+    width: 100%;
+    height: 115px;    
+}
+img.Logo_rodape {
+    height: 130px; 
+	width: 180px;
+    margin-left: 30px;
+}
+img.Instagram {
+    height: 70px;
+    width: 70px;
+    float: left;
+}
+.Contato {
+    text-align: center;
+    height: 27.2px ;
+    width: 50%;
+    font-size: 20px;
+}
+#Contatinhos {
+    margin-top: 5px;
+    height: auto;
+    font-size: 20px;
+    line-height: 35px;
+}
+.Ajuda{
+    height: 55px;
+    width: 280px;
+    background-color: #61C68A;
+    border-radius: 50px;
+    font: 30px 'Poppins', sans-serif;
+    color: #FFF;
+    margin-top: 2%;
+    margin-right:30px ;
+    box-shadow: white 5px 5px 0px;
+    transition: transform 200ms, box-shadow
+	200ms;
+    cursor: pointer;
+}
+.Ajuda:active{
+	transform: translateY(4px) translateX(4px);
+	box-shadow:none;
+}
+.Termos {
+    height: 55px;
+    width: 280px;
+    background-color: #5727AF;
+    border-radius: 50px;
+    font: 30px 'Poppins', sans-serif;
+    color: #FFF;
+    margin-top: 2%;
+    margin-right:30px ;
+    box-shadow: white 5px 5px 0px;
+    transition: transform 200ms, box-shadow
+	200ms;
+    cursor: pointer;
+}
+.Termos:active{
+	transform: translateY(4px) translateX(4px);
+	box-shadow:none;
+}
+.Copyright {
+    background-color: #13111B;
+    font-size: 30px;
+    text-align: center;
+    position:relative;
+    bottom: 0;
+    color: #FFF;
+    width: 100%;
+}
+.Foto_Contato {
+    height: 30px;
+	width: 30px;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+#Alinhar_imagem {
+    word-spacing: 10px;
+}
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .open {
+        display: block;
+    }
+}

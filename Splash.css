@@ -1,0 +1,243 @@
+*{
+	margin: 0; /* Mano não sei não sei para de perguntar */
+	padding: 0;
+}
+img.Logo{
+	height: 100px; /* Isso deixa a imagem de um tamanho bonito */
+	width: 100px; /* Isso deixa a imagem de um tamanho bonito */
+}
+
+body{
+	background:#000000; /* deixa a fundo preto */
+}
+nav{ /* To mexendo no mnu pra ele ser responsivo, fiwuem tranquilos eu cuido disso :) */
+	display: flex; /* Isso deixa o menu flexivel pra qualquer tamnho de tela (na teoria) */
+	justify-content: space-around; /* isso deixa o conteudo espalhado sem a necessidade do padding */
+	align-items: center; /* isso centraliza */
+	background: #1B182B;
+	height: 15vh; /* isso é uma nova unidade de medida criada pelo diabo, deixa um menu com um tamnho consistente em todas as plataformas */
+	overflow: hidden; /* Isso joda o texto da pagina para traz do menu */
+}
+a{
+	text-decoration: none; /* tira o sublinhado */
+	color: #fff;
+	transition: 0.3s; /* isso faz a trasição legal de cores do menu */
+}
+a:hover{
+	color: black; /* Trasforma o link em preto, não sei pq continua siblinhado, porém a gente descobre mais tarde */
+	opacity: 0.7; /* opacidade para os brasileiros */
+}
+.Menu{
+	margin-top: 40px;
+	list-style: none; /* isso tira as bolinhas horrorosas do menu */
+	display: flex;
+	font-size: 30px;
+	font-family: Café;
+}
+.Menu li{
+	letter-spacing: 1px; /* espaço entre as letras pra não parecer vomito */
+	margin-left: 20px;
+}
+MenuMobile div{ /* mais coisarelacionada ao menu respinsivo */
+	width: 32px;
+	height: 2px;
+	background: rgb(65,65,65);
+	background: linear-gradient(90deg, rgba(65,65,65,1) 0%, rgba(114,168,175,1) 100%); /* Degrade :D */
+	margin: 8px;
+}
+MenuMobile {
+	cursor: pointer; /* isso deixa o mouse de maozinha quando você passa em cima do link, uma fofura 0\\\0 */
+	display: none;
+}
+.Conteudo-1{
+	padding-top: 0,5em;
+    margin-left: 2em;
+	height: 100px;
+	background: url('Background-Ada-1.png'); /* esse é o gremio, diz oi pro gremio */
+}
+
+.Conteudo-12{
+	padding-top: 1,2em;
+    margin-left: 3em;
+	height: 300px;
+	background: url('Background-Ada-1.png'); /* esse é o gremio, diz oi pro gremio */
+}
+.Conteudo-13{
+	padding-top: 1em;
+    margin-left: 4em;
+	height: 500px;
+	background: url('Background-Ada-1.png'); /* esse é o gremio, diz oi pro gremio */
+}
+
+div.Conteudo-1-1{
+	font-family: Organic Relief;
+	font-size: 40px;
+	color: rgb(236, 225, 225);
+	margin-left: 200px;
+	margin-top: 200px;
+}
+div.Conteudo-1-2{
+	font-family: Cafe;
+	font-size: 30px;
+	color: rgb(248, 244, 244);
+	margin-left: 100px;
+}
+div.Conteudo-1-3{
+	font-family: Cafe;
+	font-size: 30px;
+	color: rgb(245, 237, 237);
+	margin-top: 100px;
+	text-align: center;
+}
+.Conteudo-2{
+	margin-left: 20px;
+	margin-right: 20px;
+	background-color: rgb(247, 240, 240);
+	border: 2px solid rgb(240, 234, 234);
+	border-radius: 12px;
+}
+div.Conteudo-2-1{
+	font-family: Organic Relief;
+	text-align: center;
+	color: white;
+}
+div.Conteudo-2-2{
+	font-family: Cafe;
+	text-align: center;
+	color: #72A8AF;
+}
+@media (max-width: 999px){ /* coisas do menu responsivo (faço comentario em tudo direitinho mais tarde, tenho fome :'( ) */
+	body{
+		overflow-x: hidden;
+	}
+	.Menu {
+	position: absolute;
+	top: 8vh;
+	right: 0;
+	width: 50vw;
+	height: 92vh;
+	background: #000;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	transform: translateX(100%);
+	}
+	.Menu li{
+		margin-left: 0;
+		opacity: 0;
+	}
+	.MenuMobile {
+	display: block;
+	}
+	.Menu.active {
+	transform: translateX(0);
+	}
+}
+
+#loading img{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+div.Conteudo-1-1{
+	font-family: Organic Relief;
+	font-size: 40px;
+	color: white;
+	margin-left: 200px;
+	margin-top: 200px;
+}
+
+img.logo_splash{
+    height: 3px; /* Isso deixa a imagem de um tamanho bonito */
+	width: 3px;
+}
+
+/* Primeiro circulo - HOME*/
+.loader-1{
+	color:white;
+	width:600px; 
+	height:600px; 
+	border: 3px solid #1bfae0;
+	border-radius: 300px;
+	border-top: 5px solid #1bfae0;
+	border-bottom: 2px solid #1bfae0;
+	
+	/* animation: loadingg 10s linear infinite;  */
+	position: absolute;
+	opacity:0.3;
+}
+/* Segundo circulo - HOME*/
+.loader-2{
+	color:white;
+	width:500px; 
+	height:500px; 
+	border: 3px solid #1bfae0;
+	border-radius: 300px;
+	border-top: 3px solid #1bfae0;
+	border-bottom: 2px solid #1bfae0;
+    /* border-right: 5px; */
+	/* animation: loadingg 10s linear infinite;  */
+	position: absolute;
+	opacity:0.5;
+}
+/* Terceiro circulo - HOME*/
+.loader-3{
+	/* content: " "; */
+	width:400px; 
+	height:400px; 
+	border: 3px solid #1bfae0;
+	border-radius: 300px;
+	border-top: 3px solid #1bfae0;
+	border-bottom: 2px solid #1bfae0;
+
+	/* animation: loadingg 10s linear infinite;  */
+	position: absolute;
+}
+
+.loader-4{
+	color:white;
+	width:700px; 
+	height:700px; 
+	border: 5px solid #EA1E63;
+	border-radius: 700px;
+	border-top: 10px solid #EA1E63;
+	border-bottom: 2px solid #EA1E63;
+	animation: loading 2s; 
+	position: absolute;
+	margin-left: 400px;
+}
+/* Segundo circulo - SPLASH*/
+.loader-4::after{
+	content: " ";
+	top: 7px;
+	left: 7px;
+	width:700px; 
+	height:700px; 
+	border: 5px solid #1bfae0;
+	border-radius: 700px;
+	border-top: 10px solid #1bfae0;
+	border-bottom: 2px solid #1bfae0;
+	animation:loading 2s; 
+	position:absolute;
+}
+
+/* Vai girar - SPLASH*/
+@keyframes loading{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+/* Vai girar - HOME */
+/* @keyframes loadingg{ */
+	/* from{ */
+		/* transform: rotate(0deg); */
+	/* } */
+	/* to{ */
+		/* transform: rotate(360deg); */
+	/* } */
+/* } */

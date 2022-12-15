@@ -1,0 +1,364 @@
+*{
+	margin: 0; /* Mano não sei não sei para de perguntar */
+	padding: 0;
+}
+img.Logo{
+	height: 90px; /* Isso deixa a imagem de um tamanho bonito */
+	width: 140px; /* Isso deixa a imagem de um tamanho bonito */
+}
+img.perfil{
+	height: 80px; /* Isso deixa a imagem de um tamanho bonito */
+	width: 80px; /* Isso deixa a imagem de um tamanho bonito */
+}
+body{
+	background: black; /* fundo do site */
+    font-family: 'Poppins';
+}
+header {
+    background-color: #1B182B;
+    box-shadow: 0px 3px 10px #464646;
+}
+a{
+	text-decoration: none; /* tira o sublinhado */
+	color: #fff;
+	transition: 0.3s;
+}
+a:hover{
+	color: black; /* Trasforma o link em preto, não sei pq continua siblinhado, porém a gente descobre mais tarde */
+	opacity: 0.7;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+	font-size: 30px;
+	font-family: 'poppins';
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.nav-item {
+    margin: 0 15px;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+.Tela1 {
+    background-color: #1B182B;
+    width: auto;
+    height: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 40px;
+    display: flex;
+    box-shadow: white 10px 10px 0px;
+    transition: transform 200ms, box-shadow
+	200ms;
+    visibility: hidden;
+}
+.Tela12 {
+    background-color: #1B182B;
+    width: auto;
+    height: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 40px;
+    display: flex;
+    box-shadow: white 10px 10px 0px;
+    transition: transform 200ms, box-shadow
+	200ms;
+    visibility: hidden;
+}
+.Bin {
+    margin-left: 0%;
+    width: 60px;
+    height: auto;
+}
+img.Bin{
+    width: 300px;
+    height: 500px;
+}
+.Titulos_botoes {
+    text-align: center;
+    width: 630px;
+    height: auto;
+    margin-left: 10%;
+}
+.Titulo {
+    margin-top: 25px;
+    color: #FFF;
+    font-size: 90px;
+    text-shadow: black 5px 5px 0px;
+    visibility: hidden;
+}
+.Subtitulo {
+    color: #FFF;
+    font-size: 40px;
+    text-shadow: black 3px 3px 0px;
+    visibility: hidden;
+}
+.Se_Inscrever {
+    background-color: #60C68A;
+    color: #FFF;
+    font-size: 30px;
+    width: 400px;
+    height: 60px;
+    border-radius: 30px;
+    box-shadow: #FFF 5px 5px 0px;
+    transition: transform 200ms, box-shadow
+	200ms;
+    cursor: pointer;
+    visibility: hidden;
+}
+.Se_Inscrever:active{
+	transform: translateY(4px) translateX(4px);
+	box-shadow:none;
+}
+.Tenho_Conta{
+    background-color: #57ACDB;
+    color: #FFF;
+    font-size: 30px;
+    width: 400px;
+    height: 60px;
+    border-radius: 30px;
+    box-shadow: #FFF 5px 5px 0px;
+    transition: transform 200ms, box-shadow
+	200ms;
+    cursor: pointer;
+    visibility: hidden;
+}
+.Tenho_Conta:active{
+	transform: translateY(4px) translateX(4px);
+	box-shadow:none;
+}
+.Tela2 {
+    background-color: #1B182B;
+    width: auto;
+    height: 500px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: white 10px 10px 0px;
+    transition: transform 200ms, box-shadow
+	200ms;
+}
+.TituloTela2 {
+    color: #FFF;
+    font-size: 75px;
+    text-shadow: black 5px 5px 0px;
+}
+.Texto {
+    color: #FFF;
+    font-size: 30px;
+}
+.TextoVerde {
+    color: #60C68A;
+}
+.TextoAzul {
+    color: #57ACDB;
+}
+.TextoVermelho {
+    color: #EA1E63;
+}
+.TextoParticipacao {
+    color: #FFF;
+    font-size: 45px;
+    margin-top: 5px;
+    text-shadow: black 5px 5px 0px;
+}
+.Tela3 {
+    background-color: #1B182B;
+    width: auto;
+    height: 500px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 40px;
+    text-align: center;
+    display: inherit;
+    align-items: stretch;
+    box-shadow: white 10px 10px 0px;
+    transition: transform 200ms, box-shadow
+	200ms;
+}
+.TituloTela3 {
+    color: #FFF;
+    font-size: 75px;
+    text-shadow: black 5px 5px 0px;
+}
+img.ImgDidatica {
+    height: 430px;
+    width: 900px;
+    margin-top: 0px;
+}
+.Tela4 {
+    background-color: #1B182B;
+    width: auto;
+    height: 500px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 40px;
+    text-align: center;
+    display: inherit;
+    align-items: stretch;
+    box-shadow: white 10px 10px 0px;
+    transition: transform 200ms, box-shadow
+	200ms;
+}
+.TituloTela4 {
+    color: #FFF;
+    font-size: 65px;
+    text-shadow: black 5px 5px 0px;
+    font-family: Poppins;
+}
+img.Equipe {
+    height: 450px;
+    width: 900px;
+}
+.Rodape {
+    display: flex;
+    background-color: #1B182B;
+    position:relative;
+    bottom: 0px;
+    color: #FFF;
+    width: 100%;
+    height: 115px;    
+}
+img.Logo_rodape {
+    height: 130px; 
+	width: 180px;
+    margin-left: 30px;
+}
+img.Instagram {
+    height: 70px;
+    width: 70px;
+    float: left;
+}
+.Contato {
+    text-align: center;
+    height: 27.2px ;
+    width: 50%;
+    font-size: 20px;
+}
+#Contatinhos {
+    margin-top: 5px;
+    height: auto;
+    font-size: 20px;
+    line-height: 35px;
+}
+.Ajuda{
+    height: 55px;
+    width: 280px;
+    background-color: #61C68A;
+    border-radius: 50px;
+    font: 30px;
+    color: #FFF;
+    margin-top: 2%;
+    margin-right:30px ;
+    box-shadow: white 5px 5px 0px;
+    transition: transform 200ms, box-shadow
+	200ms;
+    cursor: pointer;
+}
+.Ajuda:active{
+	transform: translateY(4px) translateX(4px);
+	box-shadow:none;
+}
+.Termos {
+    height: 55px;
+    width: 280px;
+    background-color: #5727AF;
+    border-radius: 50px;
+    font: 30px;
+    color: #FFF;
+    margin-top: 2%;
+    margin-right:30px ;
+    box-shadow: white 5px 5px 0px;
+    transition: transform 200ms, box-shadow
+	200ms;
+    cursor: pointer;
+}
+.Termos:active{
+	transform: translateY(4px) translateX(4px);
+	box-shadow:none;
+}
+.Copyright {
+    background-color: #13111B;
+    font-size: 30px;
+    text-align: center;
+    position:relative;
+    bottom: 0;
+    color: #FFF;
+    width: 100%;
+}
+.Foto_Contato {
+    height: 30px;
+	width: 30px;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+#Alinhar_imagem {
+    word-spacing: 10px;
+}
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+}

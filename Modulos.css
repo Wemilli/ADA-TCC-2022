@@ -1,0 +1,649 @@
+*{
+	margin: 0; /* Mano não sei não sei para de perguntar */
+	padding: 0;
+}
+img.Logo{
+	height: 90px; /* Isso deixa a imagem de um tamanho bonito */
+	width: 140px; /* Isso deixa a imagem de um tamanho bonito */
+}
+img.Perfil{
+	height: 120px; /* Isso deixa a imagem de um tamanho bonito */
+	width: 120px; /* Isso deixa a imagem de um tamanho bonito */
+    margin-left: 10%;
+}
+img.Engrenagem { /* isso aqui muda a engrenagem (tela configuração) la no canto superior direito*/
+    margin-top: 10px;
+    float: right;
+    height: 40px;
+    width: 40px;
+    margin-right: 30px;
+}
+body{
+	background: black; /* deixa a fundo cinza */
+}
+header {
+    background-color: #1B182B;
+    box-shadow: 0px 3px 10px #464646;
+}
+a{
+	text-decoration: none; /* tira o sublinhado */
+	color: #fff;
+	transition: 0.3s;
+}
+a:hover{
+	color: black; /* Trasforma o link em preto, não sei pq continua siblinhado, porém a gente descobre mais tarde */
+	opacity: 0.7;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+	font-size: 30px;
+	font-family: 'poppins';
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.nav-item {
+    margin: 0 15px;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+    font-family: 'poppins';
+}
+
+.Tela {
+    margin-bottom: 50px;
+}
+h1 { 
+	text-align: center;
+	font-family: 'Poppins';
+    font-style: normal;
+	font-weight: 400;
+	font-size: 85px;
+	line-height: 100px;
+	text-align: center;
+	color: rgb(255, 255, 255);
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    width: auto;
+    margin: auto;
+}
+.face{
+    width:400px;
+    height: 200px;
+    transition: 1s;
+    border-radius: 30px;  
+}
+.Imagens {
+    height: 110px;
+    width: 110px;
+}
+.content{
+    font-size: 30px;
+    font-family: 'Poppins';
+}
+.Algoritmo{
+    position: relative;
+    background: #ee1c63;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+    box-shadow: white 5px 5px 0px;
+    cursor: pointer;
+}
+.Estudar1 {
+    height: 55px;
+    width: 280px;
+    background-color: #EA1E63;
+    border-radius: 50px;
+    margin-top: 5%;
+    margin-left: 11%;
+    font: bold 30px 'Poppins', sans-serif;
+    color: #FFF;
+    cursor: pointer;
+}
+.container .card:hover .face.Algoritmo{
+    transform: translateY(0);
+    box-shadow:
+    inset 0 0 20px whitesmoke,
+    10px 0 70px #fff;
+}
+.container .card .face.Algoritmo .content{
+    opacity: .6;
+    transition:  0.5s;
+    text-align: center;
+  
+}
+  
+.container .card:hover .face.Algoritmo .content{
+    opacity: 1;
+   
+}
+  
+.container .card .face.Algoritmo .content i{
+    font-size: 3em;
+    color: white;
+    display: inline-block;
+     
+}
+.Constantes{
+    position: relative;
+    background: #c3165b;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+    box-shadow: white 5px 5px 0px;
+    cursor: pointer;
+}
+.Estudar2 {
+    height: 55px;
+    width: 280px;
+    background-color: #c3165b;
+    border-radius: 50px;
+    margin-top: 5%;
+    margin-left: 11%;
+    font: bold 30px 'Poppins', sans-serif;
+    color: #FFF;
+    cursor: pointer;
+}
+  
+.container .card:hover .face.Constantes{
+    transform: translateY(0);
+    box-shadow:
+    inset 0 0 20px whitesmoke,
+    10px 0 70px #fff;
+     
+} 
+.container .card .face.Constantes .content{
+    opacity: .6;
+    transition:  0.5s;
+    text-align: center;
+  
+}
+  
+.container .card:hover .face.Constantes .content{
+    opacity: 1;
+   
+}
+  
+.container .card .face.Constantes .content i{
+    font-size: 3em;
+    color: white;
+    display: inline-block;
+     
+}
+.Variaveis{
+    position: relative;
+    background: #9C28B1;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+    box-shadow: white 5px 5px 0px;
+    cursor: pointer;
+}
+.Estudar3 {
+    height: 55px;
+    width: 280px;
+    background-color: #9C28B1;
+    border-radius: 50px;
+    margin-top: 5%;
+    margin-left: 11%;
+    font: bold 30px 'Poppins', sans-serif;
+    color: #FFF;
+    cursor: pointer;
+}
+.container .card:hover .face.Variaveis{
+    transform: translateY(0);
+    box-shadow:
+    inset 0 0 20px whitesmoke,
+    10px 0 70px #fff;
+     
+} 
+.container .card .face.Variaveis .content{
+    opacity: .6;
+    transition:  0.5s;
+    text-align: center;
+  
+}
+.container .card:hover .face.Variaveis .content{
+    opacity: 1;
+   
+}
+.container .card .face.Variaveis .content i{
+    font-size: 3em;
+    color: white;
+    display: inline-block;
+}
+.Entrada_saida{
+    position: relative;
+    background: #5727AF;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+    box-shadow: white 5px 5px 0px;
+    cursor: pointer;
+}
+.Estudar4 {
+    height: 55px;
+    width: 280px;
+    background-color: #5727AF;
+    border-radius: 50px;
+    margin-top: 5%;
+    margin-left: 11%;
+    font: bold 30px 'Poppins', sans-serif;
+    color: #FFF;
+    cursor: pointer;
+}
+.container .card:hover .face.Entrada_saida{
+    transform: translateY(0);
+    box-shadow:
+    inset 0 0 20px whitesmoke,
+    10px 0 70px #fff;
+     
+} 
+.container .card .face.Entrada_saida .content{
+    opacity: .6;
+    transition:  0.5s;
+    text-align: center;
+  
+}
+.container .card:hover .face.Entrada_saida .content{
+    opacity: 1;
+   
+}
+.container .card .face.Entrada_saida .content i{
+    font-size: 3em;
+    color: white;
+    display: inline-block;
+     
+}
+.Tipos_de_Dados{
+    position: relative;
+    background: #2729B0;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+    box-shadow: white 5px 5px 0px;
+    cursor: pointer;
+}
+.Estudar5 {
+    height: 55px;
+    width: 280px;
+    background-color: #2729B0;
+    border-radius: 50px;
+    margin-top: 5%;
+    margin-left: 11%;
+    font: bold 30px 'Poppins', sans-serif;
+    color: #FFF;
+    cursor: pointer;
+}
+.container .card:hover .face.Tipos_de_Dados{
+    transform: translateY(0);
+    box-shadow:
+    inset 0 0 20px whitesmoke,
+    10px 0 70px #fff;
+     
+} 
+.container .card .face.Tipos_de_Dados .content{
+    opacity: .6;
+    transition:  0.5s;
+    text-align: center;
+}
+  
+.container .card:hover .face.Tipos_de_Dados .content{
+    opacity: 1;
+   
+}
+.container .card .face.Tipos_de_Dados .content i{
+    font-size: 3em;
+    color: white;
+    display: inline-block;
+}
+.Operadores{
+    position: relative;
+    background: #276CB1;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+    box-shadow: white 5px 5px 0px;
+    cursor: pointer;
+}
+.Estudar6 {
+    height: 55px;
+    width: 280px;
+    background-color: #276CB1;
+    border-radius: 50px;
+    margin-top: 5%;
+    margin-left: 11%;
+    font: bold 30px 'Poppins', sans-serif;
+    color: #FFF;
+    cursor: pointer;
+}
+.container .card:hover .face.Operadores{
+    transform: translateY(0);
+    box-shadow:
+    inset 0 0 20px whitesmoke,
+    10px 0 70px #fff;  
+} 
+.container .card .face.Operadores .content{
+    opacity: .6;
+    transition:  0.5s;
+    text-align: center;
+}
+.container .card:hover .face.Operadores .content{
+    opacity: 1;
+}
+.container .card .face.Operadores .content i{
+    font-size: 3em;
+    color: white;
+    display: inline-block; 
+}
+.Funções_Matematicas{
+    position: relative;
+    background: #2780B4;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+    box-shadow: white 5px 5px 0px;
+    cursor: pointer;
+}
+.Estudar7 {
+    height: 55px;
+    width: 280px;
+    background-color: #2780B4;
+    border-radius: 50px;
+    margin-top: 5%;
+    margin-left: 11%;
+    font: bold 30px 'Poppins', sans-serif;
+    color: #FFF;
+    cursor: pointer;
+}
+.container .card:hover .face.Funções_Matematicas{
+    transform: translateY(0);
+    box-shadow:
+    inset 0 0 20px whitesmoke,
+    10px 0 70px #fff;
+} 
+.container .card .face.Funções_Matematicas .content{
+    opacity: .6;
+    transition:  0.5s;
+    text-align: center;
+}
+.container .card:hover .face.Funções_Matematicas .content{
+    opacity: 1;
+}
+.container .card .face.Funções_Matematicas .content i{
+    font-size: 3em;
+    color: white;
+    display: inline-block; 
+}
+.Condicionais{
+    position: relative;
+    background: #57DCBD;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+    box-shadow: white 5px 5px 0px;
+    cursor: pointer;
+}
+.Estudar8 {
+    height: 55px;
+    width: 280px;
+    background-color: #57DCBD;
+    border-radius: 50px;
+    margin-top: 5%;
+    margin-left: 11%;
+    font: bold 30px 'Poppins', sans-serif;
+    color: #FFF;
+    cursor: pointer;
+}
+.container .card:hover .face.Condicionais{
+    transform: translateY(0);
+    box-shadow:
+    inset 0 0 20px whitesmoke,
+    10px 0 70px #fff;
+} 
+.container .card .face.Condicionais .content{
+    opacity: .6;
+    transition:  0.5s;
+    text-align: center;
+} 
+.container .card:hover .face.Condicionais .content{
+    opacity: 1;   
+}
+.container .card .face.Condicionais .content i{
+    font-size: 3em;
+    color: white;
+     display: inline-block;  
+}
+.Expressões_Logicas{
+    position: relative;
+    background: #61C68A;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+    box-shadow: white 5px 5px 0px;
+    cursor: pointer;
+}
+.Estudar9 {
+    height: 55px;
+    width: 280px;
+    background-color: #61C68A;
+    border-radius: 50px;
+    margin-top: 5%;
+    margin-left: 11%;
+    font: bold 30px 'Poppins', sans-serif;
+    color: #FFF;
+    cursor: pointer;
+}
+.container .card:hover .face.Expressões_Logicas{
+    transform: translateY(0);
+    box-shadow:
+    inset 0 0 20px whitesmoke,
+    10px 0 70px #fff;   
+} 
+.container .card .face.Expressões_Logicas .content{
+    opacity: .6;
+    transition:  0.5s;
+    text-align: center;
+} 
+.container .card:hover .face.Expressões_Logicas .content{
+    opacity: 1;  
+}
+.container .card .face.Expressões_Logicas .content i{
+    font-size: 3em;
+    color: white;
+    display: inline-block;   
+}
+h3 {
+    font-size: 1em;
+    color: white;
+    text-align: center;
+}
+.face2{
+   position: relative;
+   background: whitesmoke;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(99, 37, 37, 0.8);
+    transform: translateY(-100px);
+}
+.container .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content p{
+  font-size: 20px;
+  margin: 0 ;
+  padding: 0;
+  color:rgb(14, 32, 32);
+}
+.Rodape {
+    display: flex;
+    background-color: #1B182B;
+    position:relative;
+    bottom: 0px;
+    color: #FFF;
+    width: 100%;
+    height: 115px;    
+}
+img.Logo_rodape {
+    height: 130px; 
+	width: 180px;
+    margin-left: 30px;
+}
+img.Instagram {
+    height: 70px;
+    width: 70px;
+    float: left;
+}
+.Contato {
+    text-align: center;
+    height: 27.2px ;
+    width: 50%;
+    font-size: 20px;
+    font-family: 'poppins';
+}
+#Contatinhos {
+    margin-top: 5px;
+    height: auto;
+    font-size: 20px;
+    line-height: 35px;
+}
+.Ajuda{
+    height: 55px;
+    width: 280px;
+    background-color: #61C68A;
+    border-radius: 50px;
+    font: 30px 'Poppins', sans-serif;
+    color: #FFF;
+    margin-top: 2%;
+    margin-right:30px ;
+    box-shadow: white 5px 5px 0px;
+    transition: transform 200ms, box-shadow
+	200ms;
+    cursor: pointer;
+}
+.Ajuda:active{
+	transform: translateY(4px) translateX(4px);
+	box-shadow:none;
+}
+.Termos {
+    height: 55px;
+    width: 280px;
+    background-color: #5727AF;
+    border-radius: 50px;
+    font: 30px 'Poppins', sans-serif;
+    color: #FFF;
+    margin-top: 2%;
+    margin-right:30px ;
+    box-shadow: white 5px 5px 0px;
+    transition: transform 200ms, box-shadow
+	200ms;
+    cursor: pointer;
+}
+.Termos:active{
+	transform: translateY(4px) translateX(4px);
+	box-shadow:none;
+}
+.Copyright {
+    background-color: #13111B;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Advent Pro', sans-serif;
+    position:relative;
+    bottom: 0;
+    color: #FFF;
+    width: 100%;
+}
+.Foto_Contato {
+    height: 30px;
+	width: 30px;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+#Alinhar_imagem {
+    word-spacing: 10px;
+}
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+        font-family: 'poppins';
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        font-family: 'poppins';
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+        font-family: 'poppins';
+    }
+    .open {
+        display: block;
+    }
+}
